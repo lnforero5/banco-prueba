@@ -21,7 +21,7 @@ public class Controlador {
 	private SgrupoService service;
 	
 	@GetMapping("/home")
-	public ArrayList grupo(@RequestBody ArrayList<Integer> capacidad_grupo) {		
+	public ArrayList<Integer> grupo(@RequestBody ArrayList<Integer> capacidad_grupo) {		
 		return service.grupo(capacidad_grupo);
 	}
 	
